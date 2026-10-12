@@ -342,127 +342,74 @@ function App() {
           </div>
         </section>
 
-   
         <section id="experience" className="container-page py-5">
-  <div className="section-card grid gap-4 border-0 bg-transparent shadow-none md:grid-cols-3">
-
-    {/* EXPERIENCE */}
-    <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-100">
-      
-      <Title icon={BriefcaseBusiness} text="Experience" />
-
-      <div className="mt-5">
-        <h3 className="font-extrabold">
-          IT Support Executive / IT Support Engineer
-        </h3>
-
-        <p className="mt-1 text-sm font-semibold text-indigo-600">
-          RRG Group
-        </p>
-
-        <p className="mt-1 text-xs text-slate-500">
-          Oct 2024 – Present
-        </p>
-
-        <ul className="mt-4 space-y-2 text-sm leading-5 text-slate-700">
-          <li>• Providing IT & network support for operations.</li>
-          <li>• Troubleshooting network, hardware and software issues.</li>
-          <li>
-            • Configuring and maintaining routers, switches and network devices.
-          </li>
-          <li>
-            • Ensuring LAN, internet connectivity and VPN/remote access.
-          </li>
-          <li>• Monitoring network availability and performance.</li>
-          <li>
-            • Preparing daily reports and documenting network activities.
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    {/* EDUCATION */}
-    <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-100">
-
-      <Title icon={GraduationCap} text="Education" />
-
-      <div className="mt-5 space-y-7 text-sm">
-
-        <div>
-          <h3 className="font-extrabold">
-            Bachelor of Computer Applications (BCA)
-          </h3>
-
-          <p className="mt-1 text-slate-600">
-            Makhanlal Chaturvedi University | India
-          </p>
-
-          <p className="mt-1 text-xs text-slate-500">
-            2024
-          </p>
-        </div>
-
-        <div>
-          <h3 className="font-extrabold">
-            Higher Secondary (12th)
-          </h3>
-
-          <p className="mt-1 text-slate-600">
-            Uttar Pradesh Board | India
-          </p>
-
-          <p className="mt-1 text-xs text-slate-500">
-            2021
-          </p>
-        </div>
-
-        <div>
-          <h3 className="font-extrabold">
-            Secondary (10th)
-          </h3>
-
-          <p className="mt-1 text-slate-600">
-            Uttar Pradesh Board | India
-          </p>
-
-          <p className="mt-1 text-xs text-slate-500">
-            2019
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    {/* CERTIFICATIONS */}
-    <div
-      id="certifications"
-      className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-100"
-    >
-
-      <Title icon={Award} text="Certifications" />
-
-      <div className="mt-5 space-y-3">
-
-        <Cert
-          icon={Network}
-          text="CCNA – Networking Fundamentals"
-        />
-
-        <Cert
-          icon={Globe2}
-          text="Networking Fundamentals"
-        />
-
-        <Cert
-          icon={Terminal}
-          text="Windows & Linux Networking"
-        />
-
-      </div>
-    </div>
-
-  </div>
-</section>
+          <div className="section-card grid divide-y divide-slate-200 md:grid-cols-3 md:divide-x md:divide-y-0">
+            <div className="p-6">
+              <Title icon={BriefcaseBusiness} text="Experience" />
+              <div className="mt-5">
+                <h3 className="font-extrabold">
+                  IT Support / Network Support Engineer
+                </h3>
+                <p className="mt-1 text-sm font-semibold text-indigo-600">
+                  RRG Group
+                </p>
+                <p className="mt-1 text-xs text-slate-500">
+                  Oct 2024 – Present
+                </p>
+                <ul className="mt-4 space-y-2 text-sm leading-5 text-slate-700">
+                  <li>
+                    • Providing IT & network support for operations.
+                  </li>
+                  <li>
+                    • Troubleshooting network, hardware and software issues.
+                  </li>
+                  <li>
+                    • Configuring and maintaining routers, switches and network
+                    devices.
+                  </li>
+                  <li>
+                    • Ensuring LAN, internet connectivity and VPN/remote access.
+                  </li>
+                  <li>• Monitoring network availability and performance.</li>
+                  <li>
+                    • Preparing daily reports and documenting network
+                    activities.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="p-6">
+              <Title icon={GraduationCap} text="Education" />
+              <div className="mt-5 space-y-7 text-sm">
+                <div>
+                  <h3 className="font-extrabold">
+                    Bachelor of Computer Applications (BCA)
+                  </h3>
+                  <p className="mt-1 text-slate-600"> makhanlal chaturvedi University | India</p>
+                  <p className="mt-1 text-xs text-slate-500">2024</p>
+                </div>
+                <div>
+                  <h3 className="font-extrabold">Higher Secondary (12th)</h3>
+                  <p className="mt-1 text-slate-600">Uttar pradesh Board | India</p>
+                  <p className="mt-1 text-xs text-slate-500">2021</p>
+                </div>
+                 <div>
+                  <h3 className="font-extrabold"> Secondary (10th)</h3>
+                  <p className="mt-1 text-slate-600">UttarBoard | India</p>
+                  <p className="mt-1 text-xs text-slate-500">2019</p>
+                </div>
+              </div>
+            </div>
+            <div id="certifications" className="p-6">
+              <Title icon={Award} text="Certifications" />
+              <div className="mt-5 space-y-3">
+                <Cert icon={Network} text="CCNA – Networking Fundamentals" />
+                <Cert icon={Globe2} text="Networking Fundamentals" />
+                <Cert icon={Terminal} text="Windows & Linux Networking" />
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section id="contact" className="container-page py-6 pb-8">
           <div className="section-card flex flex-col gap-5 p-5 md:flex-row md:items-center md:justify-between md:p-6">
